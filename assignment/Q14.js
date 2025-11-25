@@ -1,8 +1,8 @@
 function evaluateEmployees(employees) {
-  // STEP 1: Keep only employees with more than 5 completed tasks
+  
   const eligible = employees.filter(emp => emp.tasksCompleted > 5);
 
-  // STEP 2: Convert each employee to an object that includes only name + performance
+  
   const evaluated = eligible.map(emp => {
     let performance;
 
@@ -20,7 +20,7 @@ function evaluateEmployees(employees) {
     };
   });
 
-  // STEP 3: Sort by performance priority: Excellent → Good → Needs Improvement
+  
   const priority = {
     "Excellent": 1,
     "Good": 2,
@@ -29,7 +29,7 @@ function evaluateEmployees(employees) {
 
   const sorted = evaluated.sort((a, b) => priority[a.performance] - priority[b.performance]);
 
-  // STEP 4: Return the sorted array
+
   return sorted;
 }
 const employees= [
