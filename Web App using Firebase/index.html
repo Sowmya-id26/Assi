@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Book Collection Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    
+    <!-- Left panel: book entry form -->
+    <aside class="form-panel">
+      <h2>Add a Book to Shelf</h2>
+
+      <form id="bookForm">
+        <label for="titleInput">
+          Book Title
+          <input type="text" id="titleInput" required />
+        </label>
+
+        <label for="authorInput">
+          Writer Name
+          <input type="text" id="authorInput" required />
+        </label>
+
+        <label for="priceInput">
+          Price (₹)
+          <input type="number" id="priceInput" required />
+        </label>
+
+        <label for="imageInput">
+          Cover Image Link
+          <input type="url" id="imageInput" required />
+        </label>
+
+        <button type="submit">Save Book</button>
+      </form>
+    </aside>
+
+    <!-- Right panel: list of books -->
+    <main class="main-section">
+      <h1>Book Management Dashboard</h1>
+      <div id="booksGrid" class="books-grid">
+        <!-- JavaScript will create and insert book cards here -->
+      </div>
+    </main>
+
+  </div>
+
+  <!-- Main script file (ES module) -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>

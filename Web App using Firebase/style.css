@@ -1,0 +1,135 @@
+/* Reset and general look */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+body {
+  background-color: #ededed;
+}
+
+/* Page layout */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ---Left Form Panel--- */
+.sidebar {
+  width: 270px;
+  background-color: #14213d;
+  color: #ffffff;
+  padding: 18px;
+}
+
+.sidebar h2 {
+  margin-bottom: 12px;
+}
+
+.sidebar label {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.sidebar input {
+  width: 100%;
+  padding: 7px;
+  margin-top: 5px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+
+.sidebar button {
+  display: block;
+  width: 100%;
+  margin-top: 16px;
+  padding: 9px;
+  border: none;
+  border-radius: 6px;
+  background-color: #34d3ff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.sidebar button:hover {
+  filter: brightness(90%);
+}
+
+/* ---Right Content Area--- */
+.content {
+  flex-grow: 1;
+  padding: 25px;
+}
+
+.content h1 {
+  margin-bottom: 18px;
+}
+
+/* Books grid styling */
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+/* Single Book Card Style */
+.book-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.13);
+}
+
+.book-card img {
+  width: 100%;
+  height: 160px;
+  border-radius: 7px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.book-card h3 {
+  margin-bottom: 3px;
+  font-size: 1.05rem;
+}
+
+.book-card p {
+  font-size: 0.85rem;
+  margin: 2px 0;
+}
+
+/* Buttons inside card */
+.book-card .actions {
+  display: flex;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.book-card button {
+  flex: 1;
+  padding: 7px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  font-size: 0.75rem;
+}
+
+/* Button color variations */
+.btn-update {
+  background-color: #ffd84a;
+}
+
+.btn-delete {
+  background-color: #ff7c7c;
+}
+
+.btn-details {
+  background-color: #b8f34a;
+}
