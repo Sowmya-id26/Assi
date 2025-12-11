@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Account</title>
+</head>
+<body>
+
+  <div id="nav-area"></div>
+
+  <h2>Create Account</h2>
+  <input id="user-email" placeholder="Email">
+  <br><br>
+  <input id="user-password" type="password" placeholder="Password">
+  <br><br>
+  <button id="createBtn">Sign Up</button>
+
+  <script type="module">
+    import { navbar } from "./components/navbar.js";
+    document.querySelector("#nav-area").innerHTML = navbar();
+    import "./signup.js";
+  </script>
+
+</body>
+</html>

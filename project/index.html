@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homepage</title>
+</head>
+<body>
+
+  <header id="nav-container"></header>
+
+  <main>
+    <h1>Home Page</h1>
+    <p>This is the main landing page.</p>
+  </main>
+
+  <footer id="footer-container"></footer>
+
+  <script type="module">
+    import { navbar } from "./components/navbar.js";
+    import { footerSection } from "./components/footer.js";
+
+    const navHolder = document.querySelector("#nav-container");
+    navHolder.innerHTML = navbar();
+
+    const footerHolder = document.querySelector("#footer-container");
+    footerHolder.innerHTML = footerSection();
+  </script>
+
+</body>
+</html>

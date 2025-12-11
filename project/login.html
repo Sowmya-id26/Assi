@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Login</title>
+</head>
+<body>
+
+  <div id="nav-holder"></div>
+
+  <h2>User Login</h2>
+  <input id="login-email" placeholder="Email">
+  <br><br>
+  <input id="login-password" type="password" placeholder="Password">
+  <br><br>
+  <button id="loginBtn">Login</button>
+
+  <script type="module">
+    import { navbar } from "./components/navbar.js";
+    document.querySelector("#nav-holder").innerHTML = navbar();
+    import "./login.js";
+  </script>
+
+</body>
+</html>

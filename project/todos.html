@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tasks</title>
+</head>
+<body>
+
+  <div id="nav-block"></div>
+
+  <h2>Task List</h2>
+  <div id="task-area"></div>
+
+  <script type="module">
+    import { navbar } from "./components/navbar.js";
+    document.querySelector("#nav-block").innerHTML = navbar();
+    import "./todos.js";
+  </script>
+
+</body>
+</html>
